@@ -19,8 +19,6 @@ public class ServiceDAOImp implements ServiceDAO {
         this.employeeRepo = employeeRepo;
     }
 
-    // @Transactional - ensures that beginning and committing the transaction is NOT required
-
     @Override
     public List<Employee> findAll() {
         return employeeRepo.findAll();
